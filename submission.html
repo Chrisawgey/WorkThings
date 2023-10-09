@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Submission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Product Submission Form</h2>
+        <form onsubmit="submitForm(event)">
+
+
+            <label for="defectStatus">Defect Status:</label>
+            <select id="defectStatus" name="defectStatus">
+                <option value="defective">Defective</option>
+                <option value="nonDefective">Non-Defective</option>
+            </select><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="flaws">Flaws:</label>
+            <textarea id="flaws" name="flaws"></textarea><br><br>
+
+            <label for="ram">RAM (GB):</label>
+            <input type="number" id="ram" name="ram" required><br><br>
+
+            <label for="storage">Storage (GB):</label>
+            <input type="number" id="storage" name="storage" required><br><br>
+
+            <label for="serialNumber">Serial Number:</label>
+            <input type="text" id="serialNumber" name="serialNumber" required><br><br>
+
+            <label for="technicianName">Technician Name:</label>
+            <input type="text" id="technicianName" name="technicianName" required>
+
+
+    <div class="test-checkboxes">
+        <h3>Components Tested:</h3>
+        <label><input type="checkbox" id="internetTested"> Internet Tested</label><br>
+        <label><input type="checkbox" id="keyboardTested"> Keyboard Tested</label><br>
+        <label><input type="checkbox" id="usbTested"> USB Tested</label><br>
+        <label><input type="checkbox" id="webcamTested"> Webcam Tested</label><br>
+        <label><input type="checkbox" id="microphoneTested"> Microphone Tested</label><br>
+        <label><input type="checkbox" id="touchscreenTested"> Touchscreen Tested</label><br>
+        <label><input type="checkbox" id="trackpadTested"> Trackpad Tested</label><br>
+        <label><input type="checkbox" id="opticalDriveTested"> Optical Drive Tested</label><br>
+        <label><input type="checkbox" id="audioSpeakersTested"> Audio Speakers Tested</label><br>
+        <label><input type="checkbox" id="headphoneJackTested"> Headphone Jack Tested</label><br>
+        <label><input type="checkbox" id="volumeBrightnessTested"> Volume & Brightness Tested</label><br>
+        <label><input type="checkbox" id="externalVideoTested"> External Video Tested</label><br>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
